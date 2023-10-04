@@ -20,12 +20,12 @@ body{
     @apply m-0 p-0 box-border
 }
 
-                                                                    /* NAVBAR STYLING */
+                                                                  /* NAVBAR STYLING */
 .navbar{
     @apply p-3 sm:gap-4  flex sm:justify-start justify-between font-helvetica items-center
 }
 .title{
-    @apply font-helvetica lg:text-[2em] sm:text-[1.5em] text-lg
+    @apply font-helvetica lg:text-[2em] sm:text-[1.5em] text-2xl
 }
 #ink{
     @apply text-projectThemeColor
@@ -43,14 +43,27 @@ body{
     @apply mx-2 lg:gap-6 gap-4 flex   items-center
 }
 .icon{
-    @apply lg:scale-150 sm:scale-125 scale-110 sm:mr-3
+    @apply lg:scale-150 sm:scale-125 scale-110 sm:mr-3 cursor-pointer 
+}
+#cross{
+    @apply text-gray-400 sm:scale-110
+}
+.searchAndCross{
+    @apply flex relative left-1/2 -translate-x-1/2 w-max gap-2 justify-center
+}
+.searchInput{
+    @apply border-b-2 border-b-projectThemeColor outline-none px-4 sm:w-max w-1/2 
 }
 .themeButton{
-    @apply sm:flex hidden bg-projectThemeColor text-white sm:px-6 px-3  items-center text-center rounded-[8px] font-helvetica font-extralight lg:text-[15px] sm:text-[13px] text-[12px] py-2
+    @apply sm:flex hidden bg-projectThemeColor text-white sm:px-6 px-3  items-center text-center rounded-[8px] font-helvetica font-extralight lg:text-[15px] sm:text-[13px] text-[12px] sm:py-2 py-3
 }
 #getStartedbtn{
     @apply sm:hidden flex 
 }
 #signUpbtn{
     @apply bg-white text-black border-2 border-solid border-gray-400
+}
+
+.navbar2{
+    @apply sm:hidden flex  fixed top-[90%] z-10 left-1/2 -translate-x-1/2  self-center  py-3 px-6 gap-4 rounded-2xl bg-projectThemeColor text-white drop-shadow-2xl
 }
