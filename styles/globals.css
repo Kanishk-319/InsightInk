@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'helveticaLight' ;
+    src: url('../public/assets/fonts/helvetica-light-587ebe5a59211.ttf');
+}
+@font-face {
+    font-family: 'helveticaRounded' ;
+    src: url('../public/assets/fonts/helvetica-rounded-bold-5871d05ead8de.otf');
+}
+@font-face {
+    font-family: 'helvetica' ;
+    src: url('../public/assets/fonts/Helvetica.ttf');
+}
+
+
+body{
+    @apply m-0 p-0 box-border
+}
+
+                                                                    /* NAVBAR STYLING */
+.navbar{
+    @apply p-3 sm:gap-4  flex sm:justify-start justify-between font-helvetica items-center
+}
+.title{
+    @apply font-helvetica lg:text-[2em] sm:text-[1.5em] text-lg
+}
+#ink{
+    @apply text-projectThemeColor
+}
+.navSection{
+    @apply flex justify-between  sm:w-full
+}
+.menu1{
+    @apply mx-6 sm:flex hidden font-helvetica items-center lg:text-[1rem] sm:text-[0.9rem]  gap-7
+}
+.active{
+    @apply border-b-2 border-solid border-b-projectThemeColor
+}
+.GetStartedAndSearch{
+    @apply mx-2 lg:gap-6 gap-4 flex   items-center
+}
+.icon{
+    @apply lg:scale-150 sm:scale-125 scale-110 sm:mr-3
+}
+.themeButton{
+    @apply sm:flex hidden bg-projectThemeColor text-white sm:px-6 px-3  items-center text-center rounded-[8px] font-helvetica font-extralight lg:text-[15px] sm:text-[13px] text-[12px] py-2
+}
+#getStartedbtn{
+    @apply sm:hidden flex 
+}
+#signUpbtn{
+    @apply bg-white text-black border-2 border-solid border-gray-400
+}
