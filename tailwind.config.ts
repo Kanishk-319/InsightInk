@@ -16,7 +16,8 @@ module.exports = {
         helvetica:['helvetica','regular']
       },
       colors:{
-        'projectThemeColor':'#7734E7'
+        'projectThemeColor':'#7734E7',
+        'desc':'#7F7979'
       }
     },
   },

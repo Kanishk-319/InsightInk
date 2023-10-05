@@ -49,13 +49,16 @@ body{
     @apply text-gray-400 sm:scale-110
 }
 .searchAndCross{
-    @apply flex relative left-1/2 -translate-x-1/2 w-max gap-2 justify-center
+    @apply  relative left-1/2 -translate-x-1/2 w-max gap-2 justify-center
 }
 .searchInput{
     @apply border-b-2 border-b-projectThemeColor outline-none px-4 sm:w-max w-1/2 
 }
 .themeButton{
     @apply sm:flex hidden bg-projectThemeColor text-white sm:px-6 px-3  items-center text-center rounded-[8px] font-helvetica font-extralight lg:text-[15px] sm:text-[13px] text-[12px] sm:py-2 py-3
+}
+.themeButton:hover{
+    @apply scale-[101%]
 }
 #getStartedbtn{
     @apply sm:hidden flex 
@@ -66,4 +69,38 @@ body{
 
 .navbar2{
     @apply sm:hidden flex  fixed top-[90%] z-10 left-1/2 -translate-x-1/2  self-center  py-3 px-6 gap-4 rounded-2xl bg-projectThemeColor text-white drop-shadow-2xl
+}
+
+
+                                                                    /* HEADER STYLING */
+
+.Header{
+    @apply  w-full my-10 flex sm:flex-row flex-col  justify-center sm:items-start items-center items-center px-4 sm:gap-[10vw] lg:h-max md:h-[70vh] sm:h-[80vh] 
+}
+.sloganAndButtonContainer{
+    @apply flex  flex-col gap-4
+}
+.sloganContainer{
+    @apply  p-2 flex flex-col sm:items-start items-center sm:text-start text-center font-helveticaRounded lg:text-[2.5rem] md:text-[2.3em] sm:text-[2em] text-[1.95em] sm:w-max
+}
+.themeText{
+    @apply text-projectThemeColor
+}
+.descContainer{
+    @apply sm:flex hidden  p-2 flex-col gap-[3px] font-helvetica text-desc  mt-[1.5vw]
+}
+.buttonContainer{
+    @apply sm:flex hidden p-2 flex-row gap-6 
+}
+.exploreBtn{
+    @apply border-b-2 border-b-projectThemeColor bg-white text-black rounded-none px-2
+}
+.mainAnimation{
+    @apply lg:w-1/5 relative sm:top-10 sm:w-1/4 lg:p-2 w-[90%]
+}
+.secondSvg{
+    @apply absolute right-[3vw] lg:w-[15vw] sm:w-1/4 lg:flex hidden
+}
+.thirdSvg{
+    @apply absolute right-[8vw] top-[370px] lg:w-[13vw] sm:w-1/4 lg:flex hidden
 }

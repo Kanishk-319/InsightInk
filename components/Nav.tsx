@@ -1,6 +1,5 @@
 'use client'
 import { FC, useState } from "react" 
-import {motion as m} from 'framer-motion'
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
