@@ -1,17 +1,17 @@
 'use client'
-import { FC } from "react"
 import Link from "next/link";
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
 import ContactSupportRoundedIcon from '@mui/icons-material/ContactSupportRounded';
 import Header from "@components/Header";
+import Feed from "@components/Feed";
 
-const Home: FC = () => {
-
+const Home:React.FC = () => {
   return (
     <>
-      <div className="w-full flex flex-col">
+      <div className="w-full  flex flex-col">
         <Header/>
+        <Feed/>
       </div>
       <nav className="navbar2">
         <Link href='/'>
@@ -23,7 +23,6 @@ const Home: FC = () => {
         <Link href='/'>
           <ContactSupportRoundedIcon />
         </Link>
-
       </nav>
     </>
 

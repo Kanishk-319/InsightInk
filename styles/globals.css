@@ -14,15 +14,25 @@
     font-family: 'helvetica' ;
     src: url('../public/assets/fonts/Helvetica.ttf');
 }
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; 
+      scrollbar-width: none; 
+    }
+}
 
 
 body{
-    @apply m-0 p-0 box-border
+    @apply m-0 p-0 box-border overflow-x-hidden
 }
 
                                                                   /* NAVBAR STYLING */
 .navbar{
-    @apply p-3 sm:gap-4  flex sm:justify-start justify-between font-helvetica items-center
+    @apply sm:p-3 p-2 sm:gap-4  flex sm:justify-start justify-between font-helvetica items-center 
 }
 .title{
     @apply font-helvetica lg:text-[2em] sm:text-[1.5em] text-2xl
@@ -75,7 +85,7 @@ body{
                                                                     /* HEADER STYLING */
 
 .Header{
-    @apply  w-full my-10 flex sm:flex-row flex-col  justify-center sm:items-start items-center items-center px-4 sm:gap-[10vw] lg:h-max md:h-[70vh] sm:h-[80vh] 
+    @apply   w-full my-10 flex sm:flex-row flex-col  justify-center sm:items-start items-center items-center px-4 sm:gap-[10vw] lg:h-max md:h-max sm:h-[60vh] overflow-x-hidden 
 }
 .sloganAndButtonContainer{
     @apply flex  flex-col gap-4
@@ -103,4 +113,25 @@ body{
 }
 .thirdSvg{
     @apply absolute right-[8vw] top-[370px] lg:w-[13vw] sm:w-1/4 lg:flex hidden
+}
+
+                                                                    /* FEED STYLING */
+
+.Feed{
+    @apply my-[190px] flex md:max-w-[80%] sm:w-[92%] sm:ml-auto  w-full 
+    flex-row justify-between px-2 overflow-x-hidden
+}
+.mainFeedSection{
+    @apply flex flex-col sm:basis-3/5 basis-full sm:items-start items-center 
+}
+.feedMenu{
+    WebkitOverflowScrolling: "touch";
+    @apply lg:text-[0.9em] sm:text-[0.7em]
+    flex font-helveticaRounded lg:gap-6 md:gap-4 gap-6 sm:w-full sm:overflow-visible  w-screen overflow-x-hidden overflow-x-scroll text-projectThemeColor 
+} 
+.menuItems{
+    @apply flex  h-max whitespace-nowrap sm:mr-2 mr-3
+}
+#feedActive{
+    @apply text-black border-b-2 border-b-black
 }

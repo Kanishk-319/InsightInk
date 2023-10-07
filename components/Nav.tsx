@@ -1,24 +1,28 @@
 'use client'
-import { FC, useState } from "react" 
+import {useState } from "react" 
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 
-const Nav:FC = () => {
+const Nav:React.FC = () => {
   const [showSearch,setShowSearch] = useState<boolean>(false)
+  const [activeState,setActiveState] = useState<string>('Home')
+  const funcToSetActive =(value:string):void=>{
+        setActiveState(value)
+  }
   return (
     <>
     <nav className="navbar">
             <h3 className="title">Insight<span id="ink">Ink</span></h3>
             <div className="navSection">
                 <div className="menu1">
-                <Link className="active" href='/'>
+                <Link className={`${activeState=='Home'?'active':undefined}`} href='/' onClick={()=>funcToSetActive('Home')}>
                     Home
                 </Link>
-                <Link href='/'>
+                <Link className={`${activeState=='Blog'?'active':undefined}`} href='/' onClick={()=>funcToSetActive('Blog')}>
                     Blog
                 </Link>
-                <Link href='/'>
+                <Link className={`${activeState=='Contact'?'active':undefined}`} href='/' onClick={()=>funcToSetActive('Contact')}>
                     Contact
                 </Link>
                 </div>

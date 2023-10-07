@@ -1,7 +1,7 @@
 import Lottie from "lottie-react"
 import animationData from '../public/assets/lottie/blog.json'
 import Image from "next/image"
-const Header = () => {
+const Header:React.FC = () => {
   return (
     <div className='Header'>
         <div className="sloganAndButtonContainer">
@@ -26,6 +26,7 @@ const Header = () => {
         src='/assets/lottie/secondSvg.svg'
         width={300}
         height={300}
+        priority
         />
          <Image 
         alt='thirdSvg' 
@@ -33,6 +34,7 @@ const Header = () => {
         src='/assets/lottie/thirdSvg.svg'
         width={300}
         height={300}
+        priority
         />
         
     </div>
