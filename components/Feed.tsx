@@ -1,31 +1,18 @@
-import Link from "next/link"
-import { useState } from "react"
-import { menuItems } from "@Helpers/MenuItems"
-import { IMenu } from "@Helpers/Interfaces"
+
+import Blog from "./Blog"
+import Nav2 from "./Nav2"
 const Feed:React.FC = () => {
-   const [showActive,setShowActive]= useState<string>('For you')
-   const handleClick = (name:string)=>{
-    setShowActive(name)
-   }
   return (
     <div className="Feed">
         <div className="mainFeedSection">
-            <nav className="feedMenu no-scrollbar">
-                {menuItems.map((item:IMenu, index:number)=>{
-                    return(
-                    <Link
-                    className='menuItems'
-                    id={item.name == showActive ? 'feedActive':null}
-                    key={index}
-                    onClick={()=>handleClick(item.name)}
-                    href={item.destination}
-                    >
-                        {item.name}
-                    </Link>
-                    )
-                })}
-            </nav>
-            
+           <Nav2/>
+           <div className="blogSection">
+                <Blog/>
+                <Blog/>
+                <Blog/>
+                <Blog/>
+           </div>
+           
         </div>
     </div>
   )
