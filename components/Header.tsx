@@ -20,7 +20,7 @@ const Header:React.FC = () => {
         </div>
         </div>
         <Lottie className="mainAnimation" animationData={animationData}/>
-        <Image 
+        {/* <Image 
         alt='secondSvg' 
         className="secondSvg" 
         src='/assets/lottie/secondSvg.svg'
@@ -35,7 +35,7 @@ const Header:React.FC = () => {
         width={300}
         height={300}
         priority
-        />
+        /> */}
         
     </div>
   )

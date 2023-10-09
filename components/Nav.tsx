@@ -12,7 +12,7 @@ const Nav:React.FC = () => {
   }
   return (
     <>
-    <nav className="navbar">
+    <nav className="navbar items-normal">
             <h3 className="title">Insight<span id="ink">Ink</span></h3>
             <div className="navSection">
                 <div className="menu1">

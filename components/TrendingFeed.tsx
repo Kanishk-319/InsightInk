@@ -12,9 +12,9 @@ const TrendingFeed = () => {
                 width={30}
                 height={30}
             />
-            <p className="feedNameContainer">Kanishk Singh Malik in <span className="fieldContainer">MERN Stack Programming</span></p>
+            <p className="FieldFeedNameContainer">Kanishk Singh Malik</p>
         </div>
-        <h3 className="feedTitle pl-3">5 Things You Must Know About React</h3>
+        <h3 className="trendingFeedTitle pl-3">Arguing about facts doesn’t work — why Politics should be like Couples Therapy</h3>
 </div>
   )
 }

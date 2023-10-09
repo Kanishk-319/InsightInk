@@ -17,8 +17,8 @@ const Blog = () => {
                     <p className="feedNameContainer"><span className="nameContainer">Kanishk Singh Malik</span> in <span className="fieldContainer">MERN Stack Programming</span></p>
                 </div>
                 <div className="feedMainContentContainer">
-                    <h3 className="feedTitle">5 Things You Must Know Aboout React</h3>
-                    <p className="blogPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas aspernatur quas recusandae excepturi ullam perspiciatis modi reiciendis consequatur illum sint.</p>
+                    <h3 className="feedTitle">5 Things You Must Know About React</h3>
+                    <p className="blogPara">One of my primary achievements was the development of a News API web application, which involved extensive use of technologies.</p>
                     <div className="dateAndSaveShareContainer">
                         <h3 className="feedNameContainer">Oct 23</h3>
                         <div className="saveAndShare">
