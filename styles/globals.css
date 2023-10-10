@@ -85,13 +85,13 @@ body{
                                                                     /* HEADER STYLING */
 
 .Header{
-    @apply   w-full my-10 flex sm:flex-row flex-col  justify-center sm:items-start items-center px-4 sm:gap-[10vw] lg:h-max md:h-max sm:h-[60vh] overflow-x-hidden 
+    @apply   w-full my-10 flex sm:flex-row flex-col  justify-center sm:items-start items-center p-4 sm:gap-[10vw] h-max overflow-x-hidden 
 }
 .sloganAndButtonContainer{
     @apply flex  flex-col gap-4
 }
 .sloganContainer{
-    @apply  p-2 flex-col sm:items-start items-center sm:text-start text-center font-helveticaRounded lg:text-[2.5rem] md:text-[2.3em] sm:text-[2em] text-[1.95em] sm:w-max
+    @apply  p-2 flex-col sm:items-start items-center sm:text-start text-center font-helveticaRounded lg:text-[2.5rem] md:text-[2em] sm:text-[1.7em] text-[1.95em] sm:w-max
 }
 .themeText{
     @apply text-projectThemeColor
@@ -106,7 +106,7 @@ body{
     @apply border-b-2 border-b-projectThemeColor bg-white text-black rounded-none px-2
 }
 .mainAnimation{
-    @apply lg:w-1/5 relative sm:top-10 sm:w-1/4 lg:p-2 w-[90%]
+    @apply 2xl:w-[400px] lg:w-[350px] relative  md:w-[300px] sm:w-[200px] lg:p-2 w-[300px]
 }
 .secondSvg{
     @apply absolute right-[3vw] lg:w-[15vw] sm:w-1/4 lg:flex hidden
@@ -119,11 +119,11 @@ body{
 
                                                                     /* md:max-w-[85%] sm:w-[95%] */
 .Feed{
-    @apply mt-[190px] flex justify-center sm:ml-auto  w-full 
-    flex-row  p-8  lg:gap-[5vw] gap-10  
+    @apply mt-[100px] flex justify-center   w-full 
+    lg:flex-row flex-col-reverse  lg:p-8 sm:p-6   lg:gap-[5vw] gap-10  
 }
 .mainFeedSection{
-    @apply flex flex-col lg:basis-[55%] basis-full 2xl:items-start items-center sm:gap-14 gap-10  
+    @apply flex flex-col lg:basis-[55%] basis-full 2xl:items-start items-center sm:gap-14 gap-10 p-2  
 }
 .blogSection{
     @apply flex flex-col gap-4  2xl:items-start w-full p-4 
@@ -161,13 +161,13 @@ body{
     @apply  cursor-pointer  text-black font-helveticaRounded 
 }
 .feedMainContentContainer{
-    @apply flex flex-col gap-2 
+    @apply flex flex-col gap-2
 }
 .feedTitle{
     @apply lg:text-[1.2em] text-[1em] font-semibold font-helveticaRounded leading-tight tracking-tight cursor-pointer
 }
 .blogPara{
-    @apply sm:flex hidden mb-2  lg:text-[0.9em] sm:text-[0.7em] text-[0.8em] leading-relaxed font-normal 
+    @apply sm:flex hidden mb-2  lg:text-[0.95em] sm:text-[0.9em] text-[0.8em] leading-relaxed font-normal 
 }
 .dateAndSaveShareContainer{
     @apply flex justify-between
@@ -179,19 +179,19 @@ body{
     @apply 2xl:w-[30px] w-[20px] cursor-pointer text-projectThemeColor
 }
 .blogImgContainer{
-    @apply flex 2xl:basis-[35%] lg:basis-[25%] sm:justify-center justify-end sm:items-center items-center sm:p-4 py-4 
+    @apply flex 2xl:basis-[35%] md:basis-[40%] sm:basis-[35%] basis-[32%] sm:justify-center justify-end sm:items-center items-center sm:p-4 py-4 
 }
 .blogImg{
-    @apply 2xl:w-[150px] 2xl:h-[130px] lg:w-[120px] lg:h-[100px] sm:w-[150px] sm:h-[130px]     h-[90%] w-[100%] sm:scale-100 scale-100 rounded-[5px]
+    @apply lg:w-[150px] lg:h-[130px]  sm:w-[150px] sm:h-[130px]    w-[100px] h-[80px] rounded-[5px]
 }
 .trendingFeedSection{
-    @apply sticky lg:flex hidden flex-col p-2  tracking-tight h-max top-0 font-helveticaRounded gap-4  basis-[25%]
+    @apply lg:sticky flex  flex-col p-2  tracking-tight h-max top-0  gap-4  lg:basis-[25%] basis-full
 }
 #trendingAvatarImg{
     @apply w-[22px]
 }
 .connectContainer{
-    @apply my-6 flex flex-col  gap-6 
+    @apply my-6 flex flex-col  gap-6 lg:flex hidden 
 }
 .followText{
     @apply font-helveticaRounded lg:text-[1em] sm:text-[0.7em] tracking-wide lg:text-[15px] sm:text-[12px] text-[10px] text-center

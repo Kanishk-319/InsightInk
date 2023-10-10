@@ -22,7 +22,7 @@ const ConnectButton:React.FC<IMenu> =({name, destination})=>{
 const Feed:React.FC = () => {
   return (
     <div className="Feed">
-        <div className="mainFeedSection">
+        <div className="mainFeedSection ">
            <Nav2/>
            <div className="blogSection">
                 <Blog/>
@@ -36,7 +36,7 @@ const Feed:React.FC = () => {
         </div>
         <div className="trendingFeedSection">
             <h3>Trending Blogs</h3>
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 ">
             <TrendingFeed/>
             <TrendingFeed/>
             <TrendingFeed/>
@@ -46,6 +46,11 @@ const Feed:React.FC = () => {
                 <ConnectButton name="Twitter" destination="/assets/icons/twitter.png"/>
                 <ConnectButton name="LinkedIn" destination="/assets/icons/linkedIn.png"/>
             </div>
+            </div>
+            <div className="blogSection lg:hidden flex">
+                <Blog/>
+                <Blog/>
+                <Blog/>
             </div>
           </div>
     </div>
