@@ -1,15 +1,20 @@
 'use client'
-import {useState } from "react" 
+import {useState,useEffect } from "react" 
+import {useSession} from 'next-auth/react'
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 
 const Nav:React.FC = () => {
+  const {data:session} = useSession()
   const [showSearch,setShowSearch] = useState<boolean>(false)
   const [activeState,setActiveState] = useState<string>('Home')
   const funcToSetActive =(value:string):void=>{
         setActiveState(value)
   }
+  useEffect(()=>{
+    console.log(session)
+  },[session])
   return (
     <>
     <nav className="navbar items-normal">
@@ -29,8 +34,8 @@ const Nav:React.FC = () => {
                 <div className="GetStartedAndSearch">
                 <SearchIcon className={`icon ${showSearch?'hidden':'flex'}`} onClick={()=>setShowSearch((prev)=>!prev)}/>
                 <button className="themeButton" id="getStartedbtn">Get Started</button>
-                <button className="themeButton">Login</button>
-                <button className="themeButton" id='signUpbtn'>Sign Up</button>
+                <Link href='/api/auth/signin'><button className="themeButton">Login</button></Link>
+               <Link href='/api/auth/signout'><button className="themeButton" id='signUpbtn'>Sign Out</button></Link> 
             </div>
             </div>
     </nav>
