@@ -32,7 +32,7 @@ body{
 
                                                                   /* NAVBAR STYLING */
 .navbar{
-    @apply sm:p-3 p-2 sm:gap-4  flex sm:justify-start  justify-between font-helvetica items-center  w-full 
+    @apply sm:p-3 p-2 sm:gap-4  flex sm:justify-start  justify-between font-helvetica items-center  w-full
 }
 .title{
     @apply font-helvetica lg:text-[2em] sm:text-[1.5em] text-2xl
@@ -40,8 +40,8 @@ body{
 #ink{
     @apply text-projectThemeColor
 }
-.navSection{
-    @apply flex justify-between  sm:w-full
+.navSection{ 
+    @apply flex justify-between  sm:w-full 
 }
 .menu1{
     @apply mx-6 sm:flex hidden font-helvetica items-center lg:text-[1rem] sm:text-[0.9rem]  gap-7
@@ -50,7 +50,7 @@ body{
     @apply border-b-2 border-solid border-b-projectThemeColor
 }
 .GetStartedAndSearch{
-    @apply mx-2 lg:gap-6 gap-4 flex   items-center
+    @apply  lg:gap-6 gap-4 flex items-center
 }
 .icon{
     @apply lg:scale-150 sm:scale-125 scale-110 sm:mr-3 cursor-pointer 
@@ -65,23 +65,52 @@ body{
     @apply border-b-2 border-b-projectThemeColor outline-none px-4 sm:w-max w-1/2 
 }
 .themeButton{
-    @apply sm:flex hidden bg-projectThemeColor text-white sm:px-6 px-3  items-center text-center rounded-[8px] font-helvetica font-extralight lg:text-[15px] sm:text-[13px] text-[12px] sm:py-2 py-3
+    @apply flex bg-white text-black sm:px-6 px-3 py-3 items-center text-center border border-projectThemeColor rounded-[8px] font-helvetica font-extralight lg:text-[15px] sm:text-[13px] text-[12px] 
 }
 .themeButton:hover{
     @apply scale-[101%]
-}
-#getStartedbtn{
-    @apply sm:hidden flex 
 }
 #signUpbtn{
     @apply bg-white text-black border-2 border-solid border-gray-400
 }
 
 .navbar2{
-    @apply sm:hidden flex  fixed top-[90%] z-10 left-1/2 -translate-x-1/2  self-center  py-3 px-6 gap-4 rounded-2xl bg-projectThemeColor text-white drop-shadow-2xl
+    @apply sm:hidden flex  fixed top-[90%] z-10 left-1/2 -translate-x-1/2  self-center  py-3 px-6 gap-4 rounded-2xl bg-projectThemeColor text-white drop-shadow-2xl gap-4
+}
+.popUpOverlay{
+    @apply sm:w-[40%] w-[90%] h-max self-center absolute top-[10%]  drop-shadow-2xl right-auto bottom-auto z-50 rounded-[20px] bg-white text-black flex flex-col py-4 px-4 border gap-4
+}
+.loginHeading{
+    @apply mt-4 lg:text-[2rem] md:text-[1.5em] sm:text-[1.3em] text-[1.2em] font-extralight self-center 
+}
+.providersContainer{
+    @apply flex flex-col justify-center self-center mt-8 p-4 gap-6 font-helvetica
+}
+.signInButton{
+    @apply border py-3 px-4 flex items-center gap-2 rounded-[15px] border-black
+}
+.signInButton:hover{
+    @apply scale-[101%]
+}
+.profileMenuContainer{
+    @apply flex flex-col gap-2
+}
+.alreadyContainer{
+    @apply p-4 self-center
+}
+.avatarAndNameContainer{
+    @apply flex flex-row gap-2 justify-between items-center lg:text-[15px] sm:text-[13px] text-[10px] font-helvetica font-extralight px-3 cursor-pointer
+}
+.avatarImage{
+    @apply rounded-[20px] sm:w-[37px] w-[20px]
+}
+.dropdown {
+  @apply border flex flex-col absolute  rounded-[20px] border-black  right-0 top-[10%]   p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-start items-start;
 }
 
-
+.dropdown_link {
+  @apply text-sm font-helveticaRounded text-black hover:text-gray-800 font-medium;
+}
                                                                     /* HEADER STYLING */
 
 .Header{
@@ -102,8 +131,14 @@ body{
 .buttonContainer{
     @apply sm:flex hidden p-2 flex-row gap-6 
 }
+#buyBtn{
+    @apply bg-projectThemeColor border-none text-white
+}
 .exploreBtn{
-    @apply border-b-2 border-b-projectThemeColor bg-white text-black rounded-none px-2
+    @apply  flex bg-white text-black  px-3 py-3 items-center text-center rounded-[8px] font-helvetica font-extralight lg:text-[15px] sm:text-[13px] text-[12px]  border-b-2 border-b-projectThemeColor bg-white text-black rounded-none
+}
+.exploreBtn:hover{
+    @apply scale-[101%]
 }
 .mainAnimation{
     @apply 2xl:w-[400px] lg:w-[350px] relative  md:w-[300px] sm:w-[200px] lg:p-2 w-[300px]
@@ -211,4 +246,10 @@ body{
 .trendingFeedTitle{
    word-spacing: -1px;
     @apply lg:text-[16px] sm:text-[13px] text-[8px] leading-tight tracking-tighter cursor-pointer
+}
+
+                                                                    /* SIGN-IN PAGE STYLING */
+
+.signInPage{
+    @apply flex justify-center mt-8
 }

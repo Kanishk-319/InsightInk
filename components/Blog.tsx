@@ -1,4 +1,3 @@
-
 import Image from "next/image"
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';

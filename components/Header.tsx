@@ -15,8 +15,8 @@ const Header:React.FC = () => {
             <p>Written Word</p>
         </div>
         <div className="buttonContainer">
-        <button className="themeButton">Buy Now</button>
-        <button className="themeButton exploreBtn">Explore Blogs</button>
+        <button className="themeButton" id="buyBtn">Buy Now</button>
+        <button className="exploreBtn">Explore Blogs</button>
         </div>
         </div>
         <Lottie className="mainAnimation" animationData={animationData}/>
