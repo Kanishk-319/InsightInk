@@ -14,7 +14,7 @@ const Nav2 = () => {
                 return (
                     <Link
                         className='menuItems'
-                        id={item.name == showActive ? 'feedActive' : null}
+                        id={`${item.name == showActive ? 'feedActive' : null}`}
                         key={index}
                         onClick={() => handleClick(item.name)}
                         href={item.destination}

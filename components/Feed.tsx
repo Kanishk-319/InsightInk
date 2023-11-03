@@ -1,4 +1,3 @@
-
 import Blog from "./Blog"
 import Nav2 from "./Nav2"
 import TrendingFeed from "./TrendingFeed"

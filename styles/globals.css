@@ -93,19 +93,22 @@ body{
     @apply scale-[101%]
 }
 .profileMenuContainer{
-    @apply flex flex-col gap-2
+    @apply flex flex-col gap-2 md:flex hidden
 }
 .alreadyContainer{
     @apply p-4 self-center
 }
 .avatarAndNameContainer{
-    @apply flex flex-row gap-2 justify-between items-center lg:text-[15px] sm:text-[13px] text-[10px] font-helvetica font-extralight px-3 cursor-pointer
+    @apply flex flex-row gap-4 justify-between items-center lg:text-[1rem] sm:text-[0.9rem]  font-extralight px-4 cursor-pointer
 }
 .avatarImage{
-    @apply rounded-[20px] sm:w-[37px] w-[20px]
+    @apply rounded-[20px] sm:w-[37px] w-[30px]
+}
+#mobileAvatar{
+    @apply md:hidden flex flex-col
 }
 .dropdown {
-  @apply border flex flex-col absolute  rounded-[20px] border-black  right-0 top-[10%]   p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-start items-start;
+  @apply border md:hidden flex flex-col absolute  rounded-[20px] border-black  right-0 top-[10%] p-5 rounded-lg bg-white min-w-[210px] flex-col gap-2 justify-start items-start;
 }
 
 .dropdown_link {
@@ -248,8 +251,33 @@ body{
     @apply lg:text-[16px] sm:text-[13px] text-[8px] leading-tight tracking-tighter cursor-pointer
 }
 
-                                                                    /* SIGN-IN PAGE STYLING */
+   
 
-.signInPage{
-    @apply flex justify-center mt-8
+                                                                /* PROFILE STYLING */
+.profilePageContainer{
+    @apply px-8 flex md:flex-row flex-col w-screen
+}
+.profileContainer{
+    @apply flex  flex-col  md:p-8 py-4 md:basis-[70%] basis-full gap-4
+}
+.profileAvContainer{
+    @apply flex flex-row gap-4 items-center
+}
+.btnAndNameContainer{
+    @apply flex flex-row md:justify-between justify-between items-center w-full 
+}
+.profileAvatarImage{
+    @apply rounded-[25px] 
+}
+#signOutbtn:hover{
+    @apply scale-[101%]
+}
+.profileNav{
+    @apply flex flex-row  px-8 py-4 gap-8 border-b 
+}
+.profileNavListItems{
+    @apply list-none cursor-pointer
+}
+.profileNavListItems:hover{
+    @apply scale-[101%]
 }
